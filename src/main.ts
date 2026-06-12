@@ -32,7 +32,7 @@ let bestDotsToShow: Dot[] | null = null;
 let bestDotsDisplayTimer = 0;
 let solutionFound = false;
 
-const hud = new Hud(document.body);
+new Hud(document.body);
 
 subscribe(() => {
   // rebuild canvas and population on config changes
