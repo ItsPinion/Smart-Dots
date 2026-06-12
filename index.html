@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>smart-dots</title>
+</head>
+
+<body
+  style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column; gap: 16px;">
+  <div class="stats-card">
+    <table class="stats-table">
+      <tbody>
+        <tr>
+          <th>Generation</th>
+          <td id="generation">0</td>
+        </tr>
+        <tr>
+          <th>Steps</th>
+          <td id="steps">0</td>
+        </tr>
+        <tr>
+          <th>Best fitness</th>
+          <td id="best-fitness">0</td>
+        </tr>
+        <tr>
+          <th>Best distance</th>
+          <td id="best-distance">0</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <canvas id="canvas"></canvas>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
