@@ -1,3 +1,4 @@
+import { getRandomMultiple, STEPS_PER_FRAME } from "../config/constants";
 import config, { update, subscribe } from "../config/runtimeConfig";
 
 type HudField = {
@@ -286,8 +287,14 @@ export default class Hud {
       Math.floor(Math.random() * Math.floor(max / s)) * s;
 
     update({
-      startingPosition: { x: randMultiple(w), y: randMultiple(h) },
-      finalPosition: { x: randMultiple(w), y: randMultiple(h) },
+      startingPosition: {
+        x: getRandomMultiple(0, w, STEPS_PER_FRAME),
+        y: getRandomMultiple(0, h, STEPS_PER_FRAME),
+      },
+      finalPosition: {
+        x: getRandomMultiple(0, w, STEPS_PER_FRAME),
+        y: getRandomMultiple(0, h, STEPS_PER_FRAME),
+      },
     });
   }
 }

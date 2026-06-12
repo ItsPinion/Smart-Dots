@@ -20,7 +20,7 @@ console.log(DISTANCE);
 export const DNA_LENGTH = DISTANCE / STEPS_PER_FRAME;
 export const MAX_DNA_MUTATION = DNA_LENGTH / 10;
 
-function getRandomMultiple(min: number, max: number, divisor: number): number {
+export function getRandomMultiple(min: number, max: number, divisor: number): number {
   const firstMultiple = Math.ceil(min / divisor) * divisor;
   const lastMultiple = Math.floor(max / divisor) * divisor;
 
