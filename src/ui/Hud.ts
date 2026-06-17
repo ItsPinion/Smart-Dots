@@ -281,9 +281,6 @@ export default class Hud {
   randomizePositions() {
     const w = config.CANVAS_WIDTH;
     const h = config.CANVAS_HEIGHT;
-    const s = Math.max(1, config.STEPS_PER_FRAME);
-
-  
 
     update({
       startingPosition: {
