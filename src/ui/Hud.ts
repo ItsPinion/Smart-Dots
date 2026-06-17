@@ -283,8 +283,7 @@ export default class Hud {
     const h = config.CANVAS_HEIGHT;
     const s = Math.max(1, config.STEPS_PER_FRAME);
 
-    const randMultiple = (max: number) =>
-      Math.floor(Math.random() * Math.floor(max / s)) * s;
+  
 
     update({
       startingPosition: {
